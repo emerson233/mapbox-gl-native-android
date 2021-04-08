@@ -77,6 +77,7 @@ ext {
             kotlinPlugin           : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
             licensesPlugin         : "com.jaredsburrows:gradle-license-plugin:${versions.licenses}",
             bintrayPlugin          : "com.jfrog.bintray.gradle:gradle-bintray-plugin:${versions.bintray}",
+
             artifactoryPlugin      : "org.jfrog.buildinfo:build-info-extractor-gradle:${versions.artifactory}",
             androidPublishPlugin   : "digital.wup:android-maven-publish:${versions.androidPublish}",
             jacocoPlugin           : "org.jacoco:org.jacoco.core:${versions.jacoco}",

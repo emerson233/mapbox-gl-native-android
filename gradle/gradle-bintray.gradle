@@ -42,6 +42,16 @@ publishing {
             }
         }
     }
+    repositories {
+        maven {
+            name 'nexus'
+            url project.ext.nexusUrl
+            credentials {
+                username project.ext.nexusUser
+                password project.ext.nexusPassword
+            }
+        }
+    }
 }
 
 bintray {

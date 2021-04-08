@@ -18,4 +18,8 @@ ext {
     mapboxBintrayUser = project.hasProperty('BINTRAY_USER') ? project.property('BINTRAY_USER') : System.getenv('BINTRAY_USER')
     mapboxBintrayApiKey = project.hasProperty('BINTRAY_API_KEY') ? project.property('BINTRAY_API_KEY') : System.getenv('BINTRAY_API_KEY')
     mapboxGpgPassphrase = project.hasProperty('GPG_PASSPHRASE') ? project.property('GPG_PASSPHRASE') : System.getenv('GPG_PASSPHRASE')
+
+    nexusUrl = project.hasProperty('NEXUS_URL') ? project.property('NEXUS_URL') : System.getenv('NEXUS_URL')
+    nexusUser = project.hasProperty('NEXUS_USER') ? project.property('NEXUS_USER') : System.getenv('NEXUS_USER')
+    nexusPassword = project.hasProperty('NEXUS_PASSWORD') ? project.property('NEXUS_PASSWORD') : System.getenv('NEXUS_PASSWORD')
 }
