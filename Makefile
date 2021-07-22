@@ -251,6 +251,10 @@ run-android-test-app-center:
 run-android-upload-to-bintray: gradle/configuration.gradle
 	$(MBGL_ANDROID_GRADLE) -Pmapbox.abis=all :MapboxGLAndroidSDK:bintrayUpload
 
+.PHONY: run-android-upload-to-nexus
+run-android-upload-to-nexus: gradle/configuration.gradle
+	$(MBGL_ANDROID_GRADLE) -Pmapbox.abis=all :MapboxGLAndroidSDK:publishMapboxMapsSdkPublicationPublicationToNexusRepository
+
 # Uploads the compiled Android SDK SNAPSHOT to oss.jfrog.org
 .PHONY: run-android-upload-to-artifactory
 run-android-upload-to-artifactory: gradle/configuration.gradle
